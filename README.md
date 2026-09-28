@@ -93,7 +93,9 @@ The mobile menu and Escape/focus return, Casa Marea section links, AER finish se
 
 ## Live demo
 
-This repository has no public deployment yet. To preview the site locally, use the commands in [Run locally](#run-locally).
+The production site is deployed on Vercel: [alex-creative-portfolio.vercel.app](https://alex-creative-portfolio.vercel.app).
+
+To preview the site locally, use the commands in [Run locally](#run-locally).
 
 ## Screenshots
 
