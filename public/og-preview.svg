@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7e3e3"/><stop offset="1" stop-color="#244bc7"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values=".18 0 0 0 0 .18 0 0 0 0 .18 0 0 0 0 0 0 0 .13 0"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="#edf1ef"/>
+  <rect x="735" y="0" width="465" height="630" fill="url(#sea)"/>
+  <path d="M735 392 840 303l65 33 84-135 211 44v385H735Z" fill="#182529"/>
+  <path d="M735 466 866 351l62 30 66-76 206 77v248H735Z" fill="#d9ded7"/>
+  <path d="M735 510c143-39 301 12 465-27v147H735Z" fill="#244bc7"/>
+  <rect width="1200" height="630" filter="url(#grain)" opacity=".16"/>
+  <text x="80" y="96" fill="#182529" font-family="Arial,sans-serif" font-size="21" letter-spacing="3">ALEX / CREATIVE DEVELOPMENT</text>
+  <text x="76" y="281" fill="#182529" font-family="Arial,sans-serif" font-size="81" font-weight="700" letter-spacing="-5">Web experiences</text>
+  <text x="76" y="379" fill="#182529" font-family="Arial,sans-serif" font-size="81" font-weight="700" letter-spacing="-5">with a point</text>
+  <text x="76" y="477" fill="#244bc7" font-family="Arial,sans-serif" font-size="81" font-weight="700" letter-spacing="-5">of view.</text>
+  <circle cx="108" cy="550" r="6" fill="#e56a49"/>
+  <text x="130" y="558" fill="#56615d" font-family="Arial,sans-serif" font-size="21">Web · Product · 3D</text>
+</svg>
