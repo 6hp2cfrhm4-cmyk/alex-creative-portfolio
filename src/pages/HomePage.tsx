@@ -43,7 +43,19 @@ export default function HomePage() {
           <ProjectCard project={projects[0]} variant="wide" />
           <ProjectCard project={projects[1]} variant="half" />
           <ProjectCard project={projects[2]} variant="half" />
+          <ProjectCard project={projects[3]} variant="wide" />
+          <ProjectCard project={projects[4]} variant="wide" />
         </div>
+        <section className="velora-work-entry" aria-labelledby="velora-work-entry-title">
+          <img src="/images/velora-hero.jpg" alt="" loading="lazy" decoding="async" sizes="(max-width: 700px) 100vw, 90vw" />
+          <div className="velora-work-entry__shade" />
+          <div className="velora-work-entry__copy">
+            <p className="section-index">New brand experience · 2026</p>
+            <h3 id="velora-work-entry-title">VELORA<br /><em>BEAUTY HOUSE</em></h3>
+            <p>A Russian-language salon concept, from its first image to a working browser-only demo booking.</p>
+            <Link to="/velora">Enter the salon experience <span aria-hidden="true">↗</span></Link>
+          </div>
+        </section>
       </section>
 
       <section className="capabilities-section" aria-labelledby="capabilities-heading">

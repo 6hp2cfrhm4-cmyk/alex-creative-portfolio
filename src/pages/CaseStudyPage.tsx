@@ -39,6 +39,7 @@ export default function CaseStudyPage() {
   }, [project]);
 
   if (!project) return <Navigate to="/not-found" replace />;
+  if (project.slug === "kern") return <Navigate to="/kern" replace />;
 
   const next = projects.find((item) => item.slug === project.next)!;
   if (project.slug === "casa-marea") return <CasaMareaExperience project={project} nextProject={next} />;

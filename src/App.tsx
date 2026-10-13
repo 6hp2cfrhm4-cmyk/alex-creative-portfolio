@@ -5,7 +5,10 @@ import { Header } from "./components/Header";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const CaseStudyPage = lazy(() => import("./pages/CaseStudyPage"));
+const SomaExperiencePage = lazy(() => import("./pages/SomaExperiencePage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage"));
+const VeloraPage = lazy(() => import("./velora/VeloraPage"));
+const KernBarberSite = lazy(() => import("./kern/KernBarberSite"));
 
 function SiteLayout() {
   const location = useLocation();
@@ -66,6 +69,10 @@ function SiteLayout() {
 export function App() {
   return (
     <Routes>
+      <Route path="/work/soma" element={<Suspense fallback={<div className="page-loading" role="status">Открываем пространство SOMA…</div>}><SomaExperiencePage /></Suspense>} />
+      <Route path="/velora" element={<Suspense fallback={<div className="page-loading" role="status">Открываем VELORA…</div>}><VeloraPage /></Suspense>} />
+      <Route path="/kern" element={<Suspense fallback={<div className="page-loading" role="status">Открываем KERN…</div>}><KernBarberSite /></Suspense>} />
+      <Route path="/work/kern" element={<Suspense fallback={<div className="page-loading" role="status">Открываем KERN…</div>}><KernBarberSite /></Suspense>} />
       <Route element={<SiteLayout />}>
         <Route index element={<HomePage />} />
         <Route path="/work/:slug" element={<CaseStudyPage />} />

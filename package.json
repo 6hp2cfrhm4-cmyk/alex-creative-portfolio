@@ -6,7 +6,12 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --disable-warning=ExperimentalWarning --experimental-strip-types --test tests/kern/*.test.ts",
+    "test:e2e": "node scripts/kern-e2e.mjs",
+    "test:velora": "node --test src/velora/booking-engine.test.mjs",
+    "test:e2e:velora": "node scripts/velora-e2e.mjs",
+    "typecheck:velora": "tsc -p tsconfig.velora.json --noEmit"
   },
   "dependencies": {
     "react": "^19.3.0",

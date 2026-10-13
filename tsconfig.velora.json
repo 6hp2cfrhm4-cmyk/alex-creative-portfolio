@@ -1,0 +1,4 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/velora/**/*.ts", "src/velora/**/*.tsx", "src/velora/**/*.d.mts"]
+}

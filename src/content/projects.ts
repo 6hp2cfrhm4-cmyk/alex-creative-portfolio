@@ -1,4 +1,4 @@
-export type ProjectSlug = "casa-marea" | "aer" | "relay";
+export type ProjectSlug = "casa-marea" | "aer" | "relay" | "soma" | "kern";
 
 export interface Project {
   slug: ProjectSlug;
@@ -19,7 +19,7 @@ export interface Project {
   outcome: string;
   note: string;
   next: ProjectSlug;
-  theme: "marea" | "aer" | "relay";
+  theme: "marea" | "aer" | "relay" | "soma" | "kern";
 }
 
 export const projects: Project[] = [
@@ -83,8 +83,50 @@ export const projects: Project[] = [
     interaction: "Switch between weekly and monthly views, move across Overview, Projects, and Team, and inspect the status of each workstream. The sample figures are illustrative and change with the selected view.",
     outcome: "The concept brings delivery, workload, and review status into one understandable surface. It is a functional prototype of the interface, not a connected project-management service.",
     note: "Independent concept project. Relay is fictional, and every number shown is illustrative interface data rather than a client result.",
-    next: "casa-marea",
+    next: "soma",
     theme: "relay",
+  },
+  {
+    slug: "soma",
+    index: "04",
+    name: "SOMA / Ritual Spa",
+    category: "Hospitality · Scroll-driven 3D",
+    shortDescription: "A ritual spa told through glass, leaves, and light.",
+    heroTitle: "Rituals for coming back to yourself.",
+    heroDescription: "A fictional botanical spa concept where a procedural glass vessel leads a scroll-controlled story.",
+    year: "2026",
+    role: "Art direction, interaction, development",
+    disciplines: ["Brand website", "Procedural 3D", "Booking prototype"],
+    tools: ["React", "TypeScript", "Three.js"],
+    challenge: "Give a boutique spa a memorable digital introduction while keeping rituals, practical details, and booking easy to find.",
+    direction: "A single oil bottle moves through a quiet editorial sequence: mineral daylight, tactile botanicals, a deep forest interval, then a warm return to the services.",
+    system: "Mineral ivory, limestone, eucalyptus, and forest green support a Russian serif wordmark, restrained sans-serif controls, and spacious image-led sections.",
+    interaction: "Native page scrolling drives one persistent WebGL scene through five reversible camera and lighting phases. The browser keeps the complete service and demo-booking flow in HTML.",
+    outcome: "The concept pairs a procedural Three.js product scene with a filtered ritual catalog, concept gallery, gift preview, specialists, FAQ, and a local-only demonstration booking flow.",
+    note: "Independent concept project. SOMA is fictional; generated imagery is labeled as conceptual visualization, and no real reservation or payment is made.",
+    next: "kern",
+    theme: "soma",
+  },
+  {
+    slug: "kern",
+    index: "05",
+    name: "KERN / BARBER CLUB",
+    category: "Hospitality · Booking experience",
+    shortDescription: "A precise first visit, from haircut choice to a real demo time.",
+    heroTitle: "Стрижка. Которая держит форму.",
+    heroDescription: "A fictional barbershop concept with a working local booking flow, barber availability, service pricing, and haircut references.",
+    year: "2026",
+    role: "Art direction, UX, interaction, development",
+    disciplines: ["Brand website", "Booking prototype", "Style finder"],
+    tools: ["React", "TypeScript", "Vite"],
+    challenge: "Help a first-time visitor choose a service and barber with enough confidence to move from browsing to a specific appointment time.",
+    direction: "A full-bleed editorial haircut image, condensed Cyrillic typography, charcoal surfaces, and one restrained brass-orange action carry the character. The booking flow remains clear, priced, and easy to scan.",
+    system: "KERN uses charcoal, bone, steel, and brass-orange with Oswald display and Manrope interface typography. Prices and durations come from one typed catalog; barber schedules and eligible services drive actual time options.",
+    interaction: "Filter the service list, compare three fictional barbers, explore six haircut references, and answer three local style-matching questions. The booking prototype checks service duration and barber schedules, then reserves an anonymous local demo slot.",
+    outcome: "The concept connects the image-led first impression to concrete service choice and a complete demo booking. It shows the commercial path without pretending to contact a real shop.",
+    note: "Independent concept project. KERN is fictional. Brand, people, prices, schedules, images, and reservations are demonstration data; no salon receives a message.",
+    next: "casa-marea",
+    theme: "kern",
   },
 ];
 
